@@ -1,0 +1,53 @@
+<template id="functionality">
+    <div>
+        <h2>Functionality</h2>
+        <p>
+            The idea is to create a solution for a simple Library Management System.
+        </p>
+        <p>
+            <strong>Different Entities</strong>
+        </p>
+        <p>Users; Books</p>
+        <p>
+            <strong>Metadata</strong>
+        </p>
+        <p>Users :-</p>
+        <p>Name, Address, Phone Number - Will be fetched from Identity Server</p>
+        <p>Barcode of User - Maintained in the System</p>
+        <p>Books :-</p>
+        <p>Title, Short Description, Author, ISBN(Barcode) - Maintained in the System</p>
+        <p>Tags applied for easy searching</p>
+        <p>
+            <strong>Transaction</strong>
+        </p>
+        <p>Books to User Relationship</p>
+        <p>
+            <strong>Basic Business Rules</strong>
+        </p>
+        <p>
+            <ul>
+                <li>Ideally a book can only be checked out if available</li>
+                <li>However if it is produced for checkout, a system check in should be made.</li>
+                <li>An email is sent to all checkedin users, to enquire if they still have that book.</li>
+            </ul>
+            <ul>
+                <li>On checkedin the quantity of the book is increased</li>
+                <li>On checkedout the quantity of the book is decreased</li>
+            </ul>
+            <ul>
+                <li>Books and Users can be created in system through bulk import/individual registration</li>
+            </ul>
+            <ul>
+                <li>Quantity of books can be increased when a new book is bought and added to the system via system checkin</li>
+            </ul>
+        </p>
+        <p>
+            <strong>Data Analytics</strong>
+        </p>
+        <p>
+            <ul>Demand for books can be predicted per user, per season.</ul>
+            <ul>Option to tag a book as damaged, so that it can be placed for ordering depending on demand</ul>
+            <ul>Understand user behavior and start predicting their like for books</ul>
+        </p>
+    </div>
+</template>
