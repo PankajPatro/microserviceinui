@@ -1,9 +1,33 @@
 <template id="startup">
     <div>
+        <p>Environment - Ubuntu; IDE - VSCode</p>
         <ul>
             <li>Step 1 : Create a empty folder called lms</li>
-            <li>Step 2 : Install angular-cli "npm-install -g angular-cli"</li>
-            <li>Step 3 : Create a sample angular application "ng new lms-app"</li>
+            <li>Step 2 : Install Nodejs (sudo apt-get install nodejs; sudo apt-get install npm)</li>
+            <li>Step 3 : Upgrade Nodejs to latest stable(sudo npm cache clean -f; sudo npm install -g n; sudo n stable;)</li>
+            <li>Step 4 : Install angular-cli "npm install -g @angular/cli"</li>
+            <li>Step 5 : Create a sample angular application "ng new lms-app"</li>
+            <li>Step 6 : Install dotnet-core - https://www.microsoft.com/net/learn/get-started/linux/ubuntu16-04</li>
+            <li>Step 6 : Create an empty dotnet web project. "dotnet new web"</li>
+            <li>Step 7 : Change startup.cs file to serve static files.</li>
+            <li>
+                <p>Step 8: Remove - app.Run ... </p>
+            </li>
+            <li>
+                <p>Step 9 : Add - app.UseDefaultFiles();app.UseStaticFiles();</p>
+            </li>
+            <li>
+                <p>Step 10 : Add the following to scripts section in package.json. "build": "ng build --prod"
+                </p>
+            </li>
+            <li>Step 11 : Change Outdir in angular-cli.json to wwwroot</li>
+            <li>Step 12 : Add a Post Build Task to csproj. "
+                &lt;Target Name="AngularBuild" AfterTargets="Build"&gt;
+                &lt;Exec Command="npm run build" /&gt;
+                &lt;/Target&gt;"</li>
+            <li>Step 12 : Change launchsettings of vscode to launch your code</li>
+            <li>Note : Make sure you have run the dotnew command inside the lms-app folder so that the csproj file is inside lms-app folder</li>
         </ul>
+        <p>Although these steps are done in ubuntu. You can do the same steps in Windows in cmd prompt</p>
     </div>
 </template>
