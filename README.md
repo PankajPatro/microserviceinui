@@ -1,10 +1,12 @@
 # microserviceinui
+Refer to https://pankajpatro.github.io/microserviceinui for more details.
+
 An experiment for looking microservice in UI. 
 
 Technology Chosen
 
 Front End - Angular + Redux (HTML + CSS + Angualar Material UI)
-Middle Tier - Asp.Net Core
+Middle Tier - Asp.Net Core/Firebase Cloud Functions
 Backend - NoSQL + JSON
 
 Infrastructure Virtualization
