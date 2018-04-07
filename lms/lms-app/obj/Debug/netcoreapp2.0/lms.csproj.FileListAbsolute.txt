@@ -1,0 +1,10 @@
+/home/mikun/pankaj-github/microserviceinui/lms/lms-app/bin/Debug/netcoreapp2.0/lms.deps.json
+/home/mikun/pankaj-github/microserviceinui/lms/lms-app/bin/Debug/netcoreapp2.0/lms.runtimeconfig.json
+/home/mikun/pankaj-github/microserviceinui/lms/lms-app/bin/Debug/netcoreapp2.0/lms.runtimeconfig.dev.json
+/home/mikun/pankaj-github/microserviceinui/lms/lms-app/bin/Debug/netcoreapp2.0/lms.dll
+/home/mikun/pankaj-github/microserviceinui/lms/lms-app/bin/Debug/netcoreapp2.0/lms.pdb
+/home/mikun/pankaj-github/microserviceinui/lms/lms-app/obj/Debug/netcoreapp2.0/lms.csproj.CoreCompileInputs.cache
+/home/mikun/pankaj-github/microserviceinui/lms/lms-app/obj/Debug/netcoreapp2.0/lms.AssemblyInfoInputs.cache
+/home/mikun/pankaj-github/microserviceinui/lms/lms-app/obj/Debug/netcoreapp2.0/lms.AssemblyInfo.cs
+/home/mikun/pankaj-github/microserviceinui/lms/lms-app/obj/Debug/netcoreapp2.0/lms.dll
+/home/mikun/pankaj-github/microserviceinui/lms/lms-app/obj/Debug/netcoreapp2.0/lms.pdb
