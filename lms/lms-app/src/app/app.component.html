@@ -1,4 +1,9 @@
 <h1>
   {{title}}
 </h1>
-<app-login></app-login>
+<div *ngIf="userLogged; else elseBlock"></div>
+<ng-template #elseBlock>
+    <div *ngIf="!(userLogged || isLoginPage)" class="button-row"><button mat-raised-button color="primary" (click)="login()">Login</button></div>
+</ng-template>
+<router-outlet></router-outlet>
+

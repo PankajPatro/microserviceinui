@@ -41,7 +41,10 @@ import {BrowserModule} from '@angular/platform-browser';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { LoginComponent } from './account/login/login.component';
+import { HomeComponent } from './home/home.component';
 import { AppComponent } from './app.component';
+import { StorageServiceModule} from 'angular-webstorage-service';
+import { RouterModule, Routes } from '@angular/router';
 
 @NgModule({
   exports: [
@@ -82,8 +85,17 @@ import { AppComponent } from './app.component';
 })
 export class DemoMaterialModule {}
 
+const appRoutes: Routes = [
+  {path : '', redirectTo: '/home',
+  pathMatch: 'full'},
+  { path: 'login', component: LoginComponent },
+  { path: 'home',      component: HomeComponent },
+];
+
 @NgModule({
   imports: [
+    RouterModule.forRoot(
+      appRoutes),
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
@@ -91,12 +103,14 @@ export class DemoMaterialModule {}
     HttpClientModule,
     DemoMaterialModule,
     MatNativeDateModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+  	StorageServiceModule
   ],
   entryComponents: [AppComponent],
   declarations: [
     LoginComponent,
-    AppComponent
+    AppComponent,
+    HomeComponent
   ],
   bootstrap: [AppComponent],
   providers: []
@@ -109,3 +123,5 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 /**  Copyright 2018 Google Inc. All Rights Reserved.
     Use of this source code is governed by an MIT-style license that
     can be found in the LICENSE file at http://angular.io/license */
+
+    
